@@ -13,6 +13,18 @@
 		FC2044E61B2C75E50038BC47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2044E51B2C75E50038BC47 /* Images.xcassets */; };
 		FC2044E91B2C75E50038BC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2044E71B2C75E50038BC47 /* Main.storyboard */; };
 		FC2044F51B2C75E50038BC47 /* smashingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2044F41B2C75E50038BC47 /* smashingAppTests.m */; };
+		FC2045001B2C781F0038BC47 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2044FF1B2C781F0038BC47 /* WebKit.framework */; };
+		FC20456E1B2C786C0038BC47 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FC2045681B2C786C0038BC47 /* .gitignore */; };
+		FC20456F1B2C786C0038BC47 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = FC2045691B2C786C0038BC47 /* CHANGELOG.md */; };
+		FC2045701B2C786C0038BC47 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FC20456A1B2C786C0038BC47 /* LICENSE */; };
+		FC2045711B2C786C0038BC47 /* Paddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC20456B1B2C786C0038BC47 /* Paddle.framework */; };
+		FC2045721B2C786C0038BC47 /* Paddle.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FC20456C1B2C786C0038BC47 /* Paddle.podspec */; };
+		FC2045731B2C786C0038BC47 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC20456D1B2C786C0038BC47 /* README.md */; };
+		FC2045741B2C78740038BC47 /* Paddle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC20456B1B2C786C0038BC47 /* Paddle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC2045781B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc in Resources */ = {isa = PBXBuildFile; fileRef = FC2045761B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc */; };
+		FC2045791B2CCE880038BC47 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2045771B2CCE880038BC47 /* DevMateKit.framework */; };
+		FC20457A1B2CCE970038BC47 /* DevMateKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC2045771B2CCE880038BC47 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC20457C1B2DF42D0038BC47 /* com.devmate.UpdateInstaller.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC2045761B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +36,30 @@
 			remoteInfo = smashingApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC2044FE1B2C77B50038BC47 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FC20457A1B2CCE970038BC47 /* DevMateKit.framework in CopyFiles */,
+				FC2045741B2C78740038BC47 /* Paddle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC20457B1B2DF4150038BC47 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				FC20457C1B2DF42D0038BC47 /* com.devmate.UpdateInstaller.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC2044D81B2C75E50038BC47 /* smashingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smashingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +74,15 @@
 		FC2044EE1B2C75E50038BC47 /* smashingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smashingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2044F31B2C75E50038BC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2044F41B2C75E50038BC47 /* smashingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = smashingAppTests.m; sourceTree = "<group>"; };
+		FC2044FF1B2C781F0038BC47 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FC2045681B2C786C0038BC47 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FC2045691B2C786C0038BC47 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		FC20456A1B2C786C0038BC47 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FC20456B1B2C786C0038BC47 /* Paddle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Paddle.framework; sourceTree = "<group>"; };
+		FC20456C1B2C786C0038BC47 /* Paddle.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Paddle.podspec; sourceTree = "<group>"; };
+		FC20456D1B2C786C0038BC47 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FC2045761B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.xpc-service"; path = com.devmate.UpdateInstaller.xpc; sourceTree = "<group>"; };
+		FC2045771B2CCE880038BC47 /* DevMateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DevMateKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2045791B2CCE880038BC47 /* DevMateKit.framework in Frameworks */,
+				FC2045711B2C786C0038BC47 /* Paddle.framework in Frameworks */,
+				FC2045001B2C781F0038BC47 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +109,9 @@
 		FC2044CF1B2C75E50038BC47 = {
 			isa = PBXGroup;
 			children = (
+				FC2045751B2CCE880038BC47 /* DevMateKit */,
+				FC2045671B2C786C0038BC47 /* Mac-Framework-master */,
+				FC2044FF1B2C781F0038BC47 /* WebKit.framework */,
 				FC2044DA1B2C75E50038BC47 /* smashingApp */,
 				FC2044F11B2C75E50038BC47 /* smashingAppTests */,
 				FC2044D91B2C75E50038BC47 /* Products */,
@@ -116,6 +167,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC2045671B2C786C0038BC47 /* Mac-Framework-master */ = {
+			isa = PBXGroup;
+			children = (
+				FC2045681B2C786C0038BC47 /* .gitignore */,
+				FC2045691B2C786C0038BC47 /* CHANGELOG.md */,
+				FC20456A1B2C786C0038BC47 /* LICENSE */,
+				FC20456B1B2C786C0038BC47 /* Paddle.framework */,
+				FC20456C1B2C786C0038BC47 /* Paddle.podspec */,
+				FC20456D1B2C786C0038BC47 /* README.md */,
+			);
+			name = "Mac-Framework-master";
+			path = "../../Mac-Framework-master";
+			sourceTree = "<group>";
+		};
+		FC2045751B2CCE880038BC47 /* DevMateKit */ = {
+			isa = PBXGroup;
+			children = (
+				FC2045761B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc */,
+				FC2045771B2CCE880038BC47 /* DevMateKit.framework */,
+			);
+			path = DevMateKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +200,8 @@
 				FC2044D41B2C75E50038BC47 /* Sources */,
 				FC2044D51B2C75E50038BC47 /* Frameworks */,
 				FC2044D61B2C75E50038BC47 /* Resources */,
+				FC2044FE1B2C77B50038BC47 /* CopyFiles */,
+				FC20457B1B2DF4150038BC47 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -197,6 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2044E61B2C75E50038BC47 /* Images.xcassets in Resources */,
+				FC20456E1B2C786C0038BC47 /* .gitignore in Resources */,
+				FC2045781B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc in Resources */,
+				FC2045721B2C786C0038BC47 /* Paddle.podspec in Resources */,
+				FC2045701B2C786C0038BC47 /* LICENSE in Resources */,
 				FC2044E91B2C75E50038BC47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +297,9 @@
 			files = (
 				FC2044E41B2C75E50038BC47 /* ViewController.m in Sources */,
 				FC2044E11B2C75E50038BC47 /* main.m in Sources */,
+				FC2045731B2C786C0038BC47 /* README.md in Sources */,
 				FC2044DF1B2C75E50038BC47 /* AppDelegate.m in Sources */,
+				FC20456F1B2C786C0038BC47 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +417,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ilyamatvienko/Desktop/testFrameworks/Mac-Framework-master",
+					"$(PROJECT_DIR)/DevMateKit",
+					"$(PROJECT_DIR)/DevMateKit/DevMateKit.framework/Frameworks",
+				);
 				INFOPLIST_FILE = smashingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework",
+					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -346,8 +439,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ilyamatvienko/Desktop/testFrameworks/Mac-Framework-master",
+					"$(PROJECT_DIR)/DevMateKit",
+					"$(PROJECT_DIR)/DevMateKit/DevMateKit.framework/Frameworks",
+				);
 				INFOPLIST_FILE = smashingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework",
+					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
