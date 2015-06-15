@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Paddle/Paddle.h>
 #import <DevMateKit/DevMateKit.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>

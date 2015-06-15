@@ -16,10 +16,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    Paddle *paddle = [Paddle sharedInstance];
-    [paddle setProductId:@"499634"];
-    [paddle setVendorId:@"9906"];
-    [paddle setApiKey:@"15f485c0cd7d576d71593cb5f296c17c"];
     
     [DevMateKit sendTrackingReport:nil delegate:nil];
     [DevMateKit setupIssuesController:nil reportingUnhandledIssues:YES];
@@ -31,6 +27,10 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (IBAction)crashApplication:(id)sender {
+    [NSException raise:@"Invalid foo value" format:@"foo of %d is invalid", 100];
 }
 
 @end

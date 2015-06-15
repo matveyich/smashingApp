@@ -14,13 +14,6 @@
 		FC2044E91B2C75E50038BC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2044E71B2C75E50038BC47 /* Main.storyboard */; };
 		FC2044F51B2C75E50038BC47 /* smashingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2044F41B2C75E50038BC47 /* smashingAppTests.m */; };
 		FC2045001B2C781F0038BC47 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2044FF1B2C781F0038BC47 /* WebKit.framework */; };
-		FC20456E1B2C786C0038BC47 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FC2045681B2C786C0038BC47 /* .gitignore */; };
-		FC20456F1B2C786C0038BC47 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = FC2045691B2C786C0038BC47 /* CHANGELOG.md */; };
-		FC2045701B2C786C0038BC47 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FC20456A1B2C786C0038BC47 /* LICENSE */; };
-		FC2045711B2C786C0038BC47 /* Paddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC20456B1B2C786C0038BC47 /* Paddle.framework */; };
-		FC2045721B2C786C0038BC47 /* Paddle.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FC20456C1B2C786C0038BC47 /* Paddle.podspec */; };
-		FC2045731B2C786C0038BC47 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FC20456D1B2C786C0038BC47 /* README.md */; };
-		FC2045741B2C78740038BC47 /* Paddle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC20456B1B2C786C0038BC47 /* Paddle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC2045781B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc in Resources */ = {isa = PBXBuildFile; fileRef = FC2045761B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc */; };
 		FC2045791B2CCE880038BC47 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2045771B2CCE880038BC47 /* DevMateKit.framework */; };
 		FC20457A1B2CCE970038BC47 /* DevMateKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC2045771B2CCE880038BC47 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -45,7 +38,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FC20457A1B2CCE970038BC47 /* DevMateKit.framework in CopyFiles */,
-				FC2045741B2C78740038BC47 /* Paddle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2045791B2CCE880038BC47 /* DevMateKit.framework in Frameworks */,
-				FC2045711B2C786C0038BC47 /* Paddle.framework in Frameworks */,
 				FC2045001B2C781F0038BC47 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,10 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2044E61B2C75E50038BC47 /* Images.xcassets in Resources */,
-				FC20456E1B2C786C0038BC47 /* .gitignore in Resources */,
 				FC2045781B2CCE880038BC47 /* com.devmate.UpdateInstaller.xpc in Resources */,
-				FC2045721B2C786C0038BC47 /* Paddle.podspec in Resources */,
-				FC2045701B2C786C0038BC47 /* LICENSE in Resources */,
 				FC2044E91B2C75E50038BC47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +285,7 @@
 			files = (
 				FC2044E41B2C75E50038BC47 /* ViewController.m in Sources */,
 				FC2044E11B2C75E50038BC47 /* main.m in Sources */,
-				FC2045731B2C786C0038BC47 /* README.md in Sources */,
 				FC2044DF1B2C75E50038BC47 /* AppDelegate.m in Sources */,
-				FC20456F1B2C786C0038BC47 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,17 +405,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ilyamatvienko/Desktop/testFrameworks/Mac-Framework-master",
 					"$(PROJECT_DIR)/DevMateKit",
 					"$(PROJECT_DIR)/DevMateKit/DevMateKit.framework/Frameworks",
 				);
 				INFOPLIST_FILE = smashingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework",
-					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework/Versions/A",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,17 +422,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ilyamatvienko/Desktop/testFrameworks/Mac-Framework-master",
 					"$(PROJECT_DIR)/DevMateKit",
 					"$(PROJECT_DIR)/DevMateKit/DevMateKit.framework/Frameworks",
 				);
 				INFOPLIST_FILE = smashingApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework",
-					"$(PROJECT_DIR)/smashingApp.xcodeproj/Mac-Framework-master/Paddle.framework/Versions/A",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -511,6 +487,7 @@
 				FC2044FA1B2C75E50038BC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC2044FB1B2C75E50038BC47 /* Build configuration list for PBXNativeTarget "smashingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +496,7 @@
 				FC2044FD1B2C75E50038BC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
